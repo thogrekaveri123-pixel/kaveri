@@ -1,23 +1,21 @@
-public class Dog {
-    public void Dog() {
-        System.out.println("Dog Barks");
+class Animal {
+    void sound() {
+        System.out.println("Animals make sounds");
     }
 }
 
-public class Animal extends Dog {
-    @Override
-    public void Dog() {
-        System.out.println("Animal eats food");
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog barks: Woof! Woof!");
     }
 }
 
-public class Inherit{
+public class Main {
     public static void main(String[] args) {
-        Animal a = new Animal();
-        Dog g = new Dog();
-
-        a.Dog();  
-        g.Dog();  
+        Dog d = new Dog();
+        d.sound();
+        d.bark();  
     }
 }
+
 
